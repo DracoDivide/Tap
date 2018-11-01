@@ -162,7 +162,7 @@ public class Tap extends Application {
                 KEY_2 = new KeyTap(String.valueOf(input2).toUpperCase());
             }
             if (args.length >= 2) {
-                String input1 = String.valueOf(args[1].charAt(0));
+                String input1 = String.valueOf(args[1].charAt(0)).toUpperCase();
                 if (input1.equals(KEY_2.key)) {
                     System.out.println("Requires 2 distinct KEYS");
                     System.exit(0);
